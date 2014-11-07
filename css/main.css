@@ -32,6 +32,9 @@ html {
 }
 body {
 	line-height: 1;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	color: white;
 }
 ol, ul {
 	list-style: none;
@@ -50,12 +53,10 @@ table {
 }
 
 .main-main {
-	padding: 100px;
-	padding-top: 30%;
+	padding-left: 100px;
+	bottom: 200px;
 	position: fixed;
 	z-index: 20;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight: 300;
 	width: 700px;
 	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
 }
@@ -64,6 +65,41 @@ h1 {
 	font-size: 400%;
 	font-weight: bold;
 	padding-bottom: 40px;
+}
+.menu-menu {
+	position: relative;
+	z-index: 21;
+	font-size: 160%;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left: 100px;
+}
+.menu-menu a:hover {
+	color: #f5ff31;
+}
+.menu-menu li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+nav.menu-menu ul li a {
+	color: white;
+}
+.appstore-appstore a {
+	position: fixed;
+	bottom: 50px;
+	left: 100px;
+	color: white;
+	z-index: 22;
+	padding: 12px;
+	background: #333;
+	border-radius: 5px;
+	text-decoration: none;
+	background: #00a99d;
+	font-size: 150%;
+}
+.appstore-appstore a:hover {
+	color: #f5ff31;
 }
 p {
 	color: white;
@@ -100,6 +136,13 @@ video#bgvid {
 	width: auto; height: auto; z-index: -100;
 /*	background: url(polina.jpg) no-repeat;
 	background-size: cover;*/
+}
+.soundcloud-soundcloud {
+	position: fixed;
+	z-index: 23;
+	height: 250px;
+	top: 100px;
+	right: 0;
 }
 
 
