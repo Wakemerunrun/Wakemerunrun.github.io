@@ -51,11 +51,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+a {
+	color: #fff;
+}
 .main-main {
 	padding-left: 100px;
-	bottom: 200px;
-	position: fixed;
+	/*bottom: 200px;*/
+	position: relative;
 	z-index: 20;
 	width: 700px;
 	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
@@ -67,39 +69,62 @@ h1 {
 	padding-bottom: 40px;
 }
 .menu-menu {
-	position: relative;
+	position: fixed;
+	top:0;
 	z-index: 21;
-	font-size: 160%;
+	width: 100%;
+	font-size: 95%;
 	font-weight: bold;
-	padding-top: 20px;
+	text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 100px;
+	background: black;
 }
 .menu-menu a:hover {
 	color: #f5ff31;
+	color: #00a99d;
+	transition: color 0.2s;
 }
+
 .menu-menu li {
 	display: inline;
 	list-style-type: none;
-	padding-right: 20px;
+	padding: 10px;;
+	/*background: rgba(0, 0, 0, 0.6);*/
+	margin-right: 20px;
 }
 nav.menu-menu ul li a {
 	color: white;
+	text-decoration: none;
+}
+#run-run, #press-press, #wav-wav, #android-android, #contact-contact {
+	min-height: 600px;
+	padding-top: 200px;
+}
+#run-run {
+	
+}
+.appstore-appstore {
+	padding-top: 100px;
 }
 .appstore-appstore a {
-	position: fixed;
-	bottom: 50px;
-	left: 100px;
 	color: white;
-	z-index: 22;
+	
 	padding: 12px;
 	background: #333;
 	border-radius: 5px;
+	border: 1px solid white;
+	background: transparent;
 	text-decoration: none;
-	background: #00a99d;
-	font-size: 150%;
+	/*background: #00a99d;*/
+	font-size: 130%;
 }
 .appstore-appstore a:hover {
-	color: #f5ff31;
+	/*color: #f5ff31;*/
+	background: #00a99d;
+	border: 1px solid #00a99d;
+	transition: background 0.4s;
 }
 p {
 	color: white;
@@ -128,20 +153,28 @@ span.yellow {
 	position: fixed;
 	top:0;
 	z-index: 10;
-	background: url(../img/pat-pat.png) repeat;
+	background: url(../img/pat-pat6.png) repeat;
 }
 video#bgvid {
-	position: fixed; right: 0; bottom: 0;
-	min-width: 100%; min-height: 100%;
-	width: auto; height: auto; z-index: -100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	
 /*	background: url(polina.jpg) no-repeat;
 	background-size: cover;*/
 }
+.video-background {
+	
+}
 .soundcloud-soundcloud {
-	position: fixed;
-	z-index: 23;
 	height: 250px;
-	top: 100px;
+	position: relative;
+	z-index: 25;
+	margin-top: 100px;
 	right: 0;
 }
 

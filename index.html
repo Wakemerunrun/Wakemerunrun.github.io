@@ -11,28 +11,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/main.css">
-
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+	
         <div class="header-header">
             <header class="wrapper clearfix">
-                
-		<nav class="menu-menu">
+                <nav class="menu-menu">
                     <ul>
-                        <li><a href="#">#RunRun</a></li>
-                        <li><a href="#">Press Press darr;</a></li>
-                        <li><a href="#">Wav Wav</a></li>
-			<li><a href="#">Android?</a></li>
-			<li><a href="#">Contact</a></li>
+                        <li><a href="#run-run">#RunRun</a></li>
+                        <li><a href="#press-press">Press Press</a></li>
+                        <li><a href="#wav-wav">Wav Wav</a></li>
+			<li><a href="#android-android">Android?</a></li>
+			<li><a href="#contact-contact">Contact</a></li>
                     </ul>
 		</nav>
             </header>
         </div>
+	
 	<div class="video-background">
 	    <video poster="img/app-beijing-background-for-movie.jpg" autoplay loop id="bgvid">
 		<source src="runnerGod4.mp4" type="video/mp4">
@@ -43,38 +41,75 @@
 	<div class="overlay-overlay">
 	    
 	</div>
-        <div class="main-main">
-                <article>
-                    <header>
-                    <!--<need to add something to see if it will upload remove this later>-->
-                        <h1>Wake Me Run Run</h1>
-                        <p class="intro-intro">Runners Alarm you can set based on the pollution, never miss a clear sky run, run.</p>
-                    </header>
+	<div id="run-run">
+	    <div class="main-main">
+		<article>
+		    <header>
+		    <!--<need to add something to see if it will upload remove this later>-->
+			<h1>Wake Me Run Run</h1>
+			<p class="intro-intro">Runners Alarm you can set based on the pollution. Never miss a clear sky: run, run.</p>
+		    </header>
+		    <div class="appstore-appstore">
+			<a href="https://itunes.apple.com/us/app/wake-me-run-run/id930001587?mt=8" target="_blank">
+			    GET #RUNRUN NOW
+			</a>
+		    </div>
 		</article>
-        </div>
-	
-	<div class="iphone-iphone">
-	    <img src="img/iphone-iphone.png"/>
+	    </div>
+	    
+	    <div class="iphone-iphone">
+		<img src="img/iphone-iphone.png"/>
+	    </div>
+	    
+	</div>
+		
+	<div id="press-press">
+	    <div class='main-main'>
+		<h1>Press Kit</h1>
+		<p class="intro-intro">Get the presskit <a href="https://www.dropbox.com/sh/2wpralrqvuseklu/AAC81sKsJZx76BXExyU3uJ3fa?dl=0" target="_blank">here.</a> Writing an article about Wake Me Run Run? Ask us for <a href="#contact-contact">goodies!</a></p>
+	    </div>
 	</div>
 	
-	<div class="appstore-appstore">
-	    <a href="https://itunes.apple.com/us/app/wake-me-run-run/id930001587?mt=8" target="_blank">
-		GET #RUNRUN NOW
-	    </a>
+	<div id="wav-wav">
+	    <div class='main-main'>
+		<h1>Alarms</h1>
+		<p class="intro-intro">Check check out these nifty alarms. Imagine waking up to one of these beauties...</p>
+	    </div>
+	    <div class="soundcloud-soundcloud">
+		<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/56503235&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	    </div>
 	</div>
 	
-	<div class="soundcloud-soundcloud">
-	    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/56503235&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	<div id="android-android">
+	    <div class='main-main'>
+		<h1>Android?</h1>
+		<p class="intro-intro">Coming soon to an android near you!</p>
+	    </div>
+	</div>
+	
+	<div id="contact-contact">
+	    <div class='main-main'>
+		<h1>Want to know more?</h1>
+		<p class="intro-intro">
+		    Contact us here: email
+		</p>
+	    </div>
 	</div>
 
+	
+	
         <div class="footer-footer">
             <footer>
                   
             </footer>
         </div>
-
-        <script src="js/vendor/jquery-1.11.1.min.js"></script>
-        <script src="js/main.js"></script>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/jquery.localScroll.min.js"></script>
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script>
+	    $.localScroll();
+	</script>
     </body>
     
 </html>
